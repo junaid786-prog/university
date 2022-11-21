@@ -1,0 +1,120 @@
+.navbar {
+    max-width: 100vw;
+    background-color: black;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar_logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.navbar_input_combo {
+    margin-top: 20px;
+}
+
+.navbar_input_combo input {
+    width: 200px;
+    padding: 5px 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+}
+
+.navbar_input_combo button {
+    background-color: transparent;
+    border: 1px solid red;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.navbar_input_combo button:hover {
+    background-color: red;
+    color: white;
+}
+
+.navbar_location {
+    width: 50%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar_location_combo {
+    display: flex;
+}
+
+.navbar_location p {
+    font-size: 11px !important;
+    font-weight: 200;
+}
+
+.navbar hr {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.navbar_bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.navbar_bottom div {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        padding: 0px;
+        width: 100vw;
+        padding: 20px 0px;
+    }
+
+    .navbar_location {
+        width: 100%;
+    }
+
+    .navbar_location_combo {
+        display: flex;
+        width: 30vw;
+        padding: 5px;
+        align-items: center;
+    }
+
+    .navbar_bottom {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar_bottom p {
+        font-size: 8px !important;
+    }
+
+    .navbar_bottom div {
+        width: auto;
+    }
+}
+
+.w_30 {
+    width: 30vw;
+}

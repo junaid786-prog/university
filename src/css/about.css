@@ -1,0 +1,39 @@
+.section_para {
+    padding: 10px;
+}
+
+.section_para_2 {
+    padding: 5px;
+}
+
+.about_courses li {
+    /* padding: 10px; */
+    margin-top: 10px;
+}
+
+.about_courses li label {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.courses_section {
+    list-style: none !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.courses_section li label {
+    font-weight: 300 !important;
+    font-size: 12px !important;
+}
+
+.course {
+    padding-left: 5px;
+    margin-top: 30px;
+}
+
+h4,
+h3 {
+    padding: 0px;
+    margin: 5px 0px;
+}

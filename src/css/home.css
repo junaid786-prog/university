@@ -1,0 +1,152 @@
+.main_boxes {
+    display: flex;
+    /* justify-content: space-evenly; */
+
+}
+
+.main_box {
+    background-color: rgb(170, 12, 44);
+    width: 30vw;
+    margin: 0px 20px 0px 0px;
+    border-radius: 5px;
+}
+
+.main_box img {
+    border-radius: 5px 5px 0px 0px;
+    width: 30vw;
+}
+
+.main_box_info {
+    padding: 10px;
+}
+
+.main_box_info h3 {
+    font-weight: 600;
+    font-size: 2.5vmin;
+}
+
+.main_box_info p {
+    font-size: 2.0vmin;
+}
+
+.sub_section_box {
+    padding: 10px;
+    width: 30vw;
+    position: relative;
+    background-color: rgb(170, 12, 44);
+    min-height: 200px;
+    border-radius: 5px;
+}
+
+.sub_section_box p {
+    font-size: 12px;
+}
+
+.sub_section_box p:last-child {
+    position: absolute;
+    bottom: 10px;
+}
+
+.crypto_courses_left img {
+    width: 292px;
+    height: 320px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.crypto_courses_right {
+    background-color: rgb(170, 12, 44);
+    padding: 20px;
+    border-radius: 0px 5px 5px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-height: 100%;
+}
+
+.crypto_courses_buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.crypto_courses_right button {
+    background-color: rgb(152, 10, 10);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+
+.partner_boxes {
+    display: flex;
+    /* width: 50%; */
+    /* justify-content: space-between; */
+    letter-spacing: 1px;
+}
+
+.partner_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(170, 12, 44);
+    /* padding: 20px; */
+    width: 100px;
+    margin: 0px 5px 0px 0px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    h1 {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 9px;
+    }
+
+    .sub_section_box,
+    .main_box,
+    .main_box img {
+        width: 35vw;
+    }
+
+    .main_box:first-child {
+        margin: 0px 5px 0px 0px;
+    }
+
+    .crypto_courses_left img {
+        width: 25vw;
+        height: auto;
+        /* width: 25vw;
+        min-height: 100px; */
+    }
+
+    .crypto_courses_right {
+        padding: 5px;
+        min-height: auto;
+    }
+
+    .crypto_courses_right h4 {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .crypto_courses_buttons button {
+        font-size: 10px;
+        font-weight: 400;
+        padding: 5px 10px;
+    }
+}

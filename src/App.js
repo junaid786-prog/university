@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import "./App.css"
+import Navbar from "./components/Navbar"
+// import Sidebar from "./components/Sidebar"
+import About from "./pages/About"
+import Articles from "./pages/Articles"
+import Contact from "./pages/Contact"
+import Courses from "./pages/Courses"
+import Home from "./pages/Home"
 
 function App() {
+  const [isActive, setActive] = useState("")
+  const activeLink = (name) => {
+    setActive(name)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Routes>
+        <Route
+          exact
+          path="/"
+          element={<Home isActive={isActive} setActive={activeLink} />}
+        />
+        <Route
+          exact
+          path="/articles"
+          element={<Articles isActive={isActive} setActive={activeLink} />}
+        />
+        <Route
+          exact
+          path="/contact"
+          element={<Contact isActive={isActive} setActive={activeLink} />}
+        />
+        <Route
+          exact
+          path="/courses"
+          element={<Courses isActive={isActive} setActive={activeLink} />}
+        />
+        <Route
+          exact
+          path="/about"
+          element={<About isActive={isActive} setActive={activeLink} />}
+        />
+      </Routes>
+      <Navbar />
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
