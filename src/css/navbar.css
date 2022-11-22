@@ -83,6 +83,30 @@
     justify-content: space-between;
 }
 
+.navbar_social_icons {
+    margin-top: 20px;
+}
+
+.navbar_location_combo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_location_combo svg {
+    width: 15px;
+    margin: 0px 5px;
+    color: rgb(170, 12, 44);
+}
+
+.navbar_social_icons svg {
+
+    background-color: rgb(170, 12, 44);
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0px 5px;
+}
+
 @media screen and (max-width: 800px) {
     .navbar {
         padding: 0px;

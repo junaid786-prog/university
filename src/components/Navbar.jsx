@@ -1,5 +1,12 @@
 import pic from '../assets/Crypto.svg'
 import '../css/navbar.css'
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import CameraAltIcon from '@mui/icons-material/CameraAlt';
+import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import AddLocationAltOutlinedIcon from '@mui/icons-material/AddLocationAltOutlined';
 const Navbar = () => {
     return (
         <div className='navbar'>
@@ -13,16 +20,24 @@ const Navbar = () => {
                 </div>
                 <div className='navbar_location'>
                     <div className='navbar_location_combo'>
+                        <CallOutlinedIcon />
                         <p>+0123456789</p>
                     </div>
                     <div className='navbar_location_combo'>
-                        <p>info@alabanacrypto currency.com</p>
+                        <EmailOutlinedIcon />
+                        <p>info@alabana cryptocurrency.com</p>
                     </div>
                     <div className='navbar_location_combo'>
+                        <AddLocationAltOutlinedIcon />
                         <p>007 main street, NewYork, USA</p>
                     </div>
                 </div>
-                <div className='navbar_social_icons'></div>
+                <div className='navbar_social_icons'>
+                    <TwitterIcon />
+                    <LinkedInIcon />
+                    <FacebookIcon />
+                    <CameraAltIcon />
+                </div>
             </div>
             <hr />
             <div className='navbar_bottom'>
