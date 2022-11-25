@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import "./App.css"
+import "./css/buttons.css"
+
 import Navbar from "./components/Navbar"
 // import Sidebar from "./components/Sidebar"
 import About from "./pages/About"

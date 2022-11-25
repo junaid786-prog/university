@@ -1,10 +1,10 @@
 import Sidebar from '../components/Sidebar'
 import '../css/home.css'
-import rect_1 from '../assets/rect.png'
-import rect_2 from '../assets/rect_1.png'
 import course from '../assets/course.png'
 
 import { useEffect } from 'react'
+import Article from '../components/Article'
+import { OurArticles } from '../assets/OurArticles'
 const Home = ({ isActive, setActive }) => {
     useEffect(() => {
         setActive('Home')
@@ -17,26 +17,13 @@ const Home = ({ isActive, setActive }) => {
             <div className='component_'>
                 <div className='home_section'>
                     <div className='section_heading'>
-                        <h1>University of <br /> Albama</h1>
+                        <h1>University of  Albama <br /> Cryptocurrency Club</h1>
                     </div>
                     <div className='main_boxes'>
-                        <div className='main_box'>
-                            <div className='main_box_img'>
-                                <img src={rect_1} alt='box_img' />
-                            </div>
-                            <div className='main_box_info'>
-                                <h3>Arbitrum Scalling Etherium</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A adipisci fugiat cumque </p>
-                            </div>
-                        </div>
-                        <div className='main_box'>
-                            <div className='main_box_img'>
-                                <img src={rect_2} alt='box_img' />
-                            </div>
-                            <div className='main_box_info'>
-                                <h3>Arbitrum Scalling Etherium</h3>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio doloremque ipsa iure </p>
-                            </div>
+                        <div className='main_boxes mt_10'>
+                            {OurArticles.map((article, i) => {
+                                return (i < 2) && <Article title={article.title} src={article.src} description={article.description} key={i} />
+                            })}
                         </div>
                     </div>
                     <div className='sub_section'>
@@ -58,10 +45,10 @@ const Home = ({ isActive, setActive }) => {
                                 <h4>Crypto Foundation Courses</h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 <div className='crypto_courses_buttons'>
-                                    <button>Basics</button>
-                                    <button>NFTs</button>
-                                    <button>Web3</button>
-                                    <button>Defi</button>
+                                    <button className='custom-btn btn-7'><span>Basics</span></button>
+                                    <button className='custom-btn btn-7'><span>NFTs</span></button>
+                                    <button className='custom-btn btn-7'><span>Web3</span></button>
+                                    <button className='custom-btn btn-7'><span>Defi</span></button>
                                 </div>
                             </div>
                         </div>

@@ -1,14 +1,17 @@
 .main_boxes {
     display: flex;
+    flex-wrap: wrap;
     /* justify-content: space-evenly; */
 
 }
 
 .main_box {
+    margin-top: 10px !important;
     background-color: rgb(170, 12, 44);
     width: 30vw;
     margin: 0px 20px 0px 0px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .main_box img {
@@ -70,7 +73,7 @@
     margin-top: 10px;
 }
 
-.crypto_courses_right button {
+/* .crypto_courses_right button {
     background-color: rgb(152, 10, 10);
     color: white;
     border: none;
@@ -79,7 +82,7 @@
     font-size: 12px;
     cursor: pointer;
 
-}
+} */
 
 .partner_boxes {
     display: flex;
@@ -147,6 +150,19 @@
     .crypto_courses_buttons button {
         font-size: 10px;
         font-weight: 400;
-        padding: 5px 10px;
+        /* padding: 5px 10px; */
+    }
+
+    .custom-btn {
+        width: auto !important;
+        padding: 0px 4px;
+    }
+
+    .social_card img {
+        width: 50px;
+    }
+
+    .social_card {
+        width: 40%;
     }
 }

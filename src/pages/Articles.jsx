@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react'
 import Sidebar from '../components/Sidebar'
-import rect_1 from '../assets/rect.png'
-import rect_2 from '../assets/rect_1.png'
-import rect_3 from '../assets/rect_3.png'
+import Article from '../components/Article'
+import { OurArticles } from '../assets/OurArticles'
 
 const Articles = ({ isActive, setActive }) => {
     useEffect(() => {
@@ -24,44 +23,9 @@ const Articles = ({ isActive, setActive }) => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae atque, facilis unde quam molestias dolore quaerat blanditiis aut dicta vel eligendi quod debitis quia necessitatibus natus facere dolores fugit! Quam!
                     </p>
                     <div className='main_boxes mt_10'>
-                        <div className='main_box'>
-                            <div className='main_box_img'>
-                                <img src={rect_1} alt='box_img' />
-                            </div>
-                            <div className='main_box_info'>
-                                <h3>Arbitrum Scalling Etherium</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A adipisci fugiat cumque </p>
-                            </div>
-                        </div>
-                        <div className='main_box'>
-                            <div className='main_box_img'>
-                                <img src={rect_2} alt='box_img' />
-                            </div>
-                            <div className='main_box_info'>
-                                <h3>Arbitrum Scalling Etherium</h3>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio doloremque ipsa iure </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='main_boxes mt_10'>
-                        <div className='main_box'>
-                            <div className='main_box_img'>
-                                <img src={rect_3} alt='box_img' />
-                            </div>
-                            <div className='main_box_info'>
-                                <h3>Arbitrum Scalling Etherium</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A adipisci fugiat cumque </p>
-                            </div>
-                        </div>
-                        <div className='main_box'>
-                            <div className='main_box_img'>
-                                <img src={rect_1} alt='box_img' />
-                            </div>
-                            <div className='main_box_info'>
-                                <h3>Arbitrum Scalling Etherium</h3>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio doloremque ipsa iure </p>
-                            </div>
-                        </div>
+                        {OurArticles.map((article, i) => {
+                            return <Article title={article.title} src={article.src} description={article.description} key={i} />
+                        })}
                     </div>
                 </div>
             </div>

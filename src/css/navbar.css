@@ -42,7 +42,6 @@
     border-radius: 5px;
     padding: 5px 10px;
     margin-left: 20px;
-    cursor: pointer;
 }
 
 .navbar_input_combo button:hover {
@@ -90,6 +89,7 @@
 .navbar_location_combo {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .navbar_location_combo svg {
@@ -105,6 +105,7 @@
     padding: 10px;
     border-radius: 50%;
     margin: 0px 5px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 800px) {
